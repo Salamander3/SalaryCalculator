@@ -19,5 +19,10 @@ class Main {
     System.out.println("How many weeks into the future do you want to calculate.");
     int weeks = scan.nextInt();
     System.out.println("You want to calculate " + weeks + " weeks in the future.");
+
+    //Collects how much you make per week
+    System.out.println("How much you make per week.");
+    Double salary = scan.nextDouble();
+    System.out.println("you make per " + salary + "week.");
   }
 }
