@@ -24,5 +24,7 @@ class Main {
     System.out.println("How much you make per week.");
     Double salary = scan.nextDouble();
     System.out.println("you make per " + salary + "week.");
+
+    //Loop TIME
   }
 }
