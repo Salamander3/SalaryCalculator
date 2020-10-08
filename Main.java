@@ -11,8 +11,13 @@ class Main {
     System.out.println("Your name is " + name);
 
     //Collects the user's current amount of money
-     System.out.println("Please enter your curent amount of money.");
+    System.out.println("Please enter your curent amount of money.");
     Double nowCash = scan.nextDouble();
     System.out.println("Your curent amount of money is " + nowCash);
+
+    //Collects how many weeks that they want to calculate
+    System.out.println("How many weeks into the future do you want to calculate.");
+    int weeks = scan.nextInt();
+    System.out.println("You want to calculate " + weeks + " weeks in the future.");
   }
 }
