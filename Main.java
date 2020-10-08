@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Cal {
+class Main {
   public static void main(String[] args) {
     //Adds the Scanner Object
     Scanner scan = new Scanner(System.in);
