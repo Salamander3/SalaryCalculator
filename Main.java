@@ -9,5 +9,10 @@ class Main {
     System.out.println("Please enter your name.");
     String name = scan.nextLine();
     System.out.println("Your name is " + name);
+
+    //Collects the user's current amount of money
+     System.out.println("Please enter your curent amount of money.");
+    Double nowCash = scan.nextDouble();
+    System.out.println("Your curent amount of money is " + nowCash);
   }
 }
