@@ -23,8 +23,21 @@ class Main {
     //Collects how much you make per week
     System.out.println("How much you make per week.");
     Double salary = scan.nextDouble();
-    System.out.println("you make per " + salary + "week.");
+    System.out.println("you make $" + salary + " per week.");
 
-    //Loop TIME
+    //Loop
+    int nowWeeks = 0;
+    if(salary >= 0 && weeks >= 0 && weeks >= nowWeeks)
+    {
+      while(nowWeeks != weeks)
+      {
+      System.out.println("Week " + (nowWeeks + 1));
+      nowWeeks++;
+      }
+    }
+    else;
+    {
+      System.out.println("Done");
+    }
   }
 }
