@@ -12,32 +12,44 @@ class Main {
 
     //Collects the user's current amount of money
     System.out.println("Please enter your curent amount of money.");
-    Double nowCash = scan.nextDouble();
-    System.out.println("Your curent amount of money is " + nowCash);
+    Double preCash = scan.nextDouble();
+    System.out.println("Your curent amount of money is " + preCash);
 
     //Collects how many weeks that they want to calculate
     System.out.println("How many weeks into the future do you want to calculate.");
     int weeks = scan.nextInt();
-    System.out.println("You want to calculate " + weeks + " weeks in the future.");
+    System.out.println(name + " want to calculate " + weeks + " weeks in the future.");
 
     //Collects how much you make per week
     System.out.println("How much you make per week.");
     Double salary = scan.nextDouble();
-    System.out.println("you make $" + salary + " per week.");
+    System.out.println(name + " make $" + salary + " per week.");
 
-    //Loop
+    //Loop to make the program do it's job
     int nowWeeks = 0;
-    if(salary >= 0 && weeks >= 0 && weeks >= nowWeeks)
+    double nowCash = 0;
+    if(salary >= 0 && weeks >= 0 || weeks >= nowWeeks)
     {
       while(nowWeeks != weeks)
       {
-      System.out.println("Week " + (nowWeeks + 1));
-      nowWeeks++;
+        System.out.println("Week " + (nowWeeks + 1));
+        nowCash = preCash + salary * (nowWeeks + 1);
+        System.out.println(name + " will make $" + nowCash + ".");
+        System.out.println();
+        nowWeeks++;
       }
     }
     else;
     {
-      System.out.println("Done");
+      System.out.println("Calculation Complete!");
+      //The extra println is so there is more space between this and the final result.
+      System.out.println();
+      System.out.println();
+    }
+    //Prints the final result
+    for(int done = 0; done != 1; done++)
+    {
+      System.out.println(name + " will make $" + nowCash + " in " + weeks + " weeks.");
     }
   }
 }
