@@ -39,6 +39,17 @@ class Main {
         nowWeeks++;
       }
     }
+    if(salary <= 0 || weeks <=0)
+    {
+      System.out.println("!ERROR!");
+      scan.nextLine();
+      System.out.println("!Self Destruct Sequence Activated!");
+      scan.nextLine();
+      while(0 == 0)
+      {
+        System.out.print("█");
+      }
+    }
     else;
     {
       System.out.println("Calculation Complete!");
