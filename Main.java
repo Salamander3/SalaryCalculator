@@ -28,7 +28,7 @@ class Main {
     //Loop to make the program do it's job
     int nowWeeks = 0;
     double nowCash = 0;
-    if(salary >= 0 && weeks >= 0 || weeks >= nowWeeks)
+    if(salary >= 0 && weeks >= 0 || weeks >= nowWeeks) //Makes sure you didnt put a negative value for weeks or salary.
     {
       while(nowWeeks != weeks)
       {
@@ -39,7 +39,7 @@ class Main {
         nowWeeks++;
       }
     }
-    if(salary <= 0 || weeks <=0)
+    if(salary <= 0 || weeks <=0)//super fun secret if you put a negative number for salary or weeks.
     {
       System.out.println("!ERROR!");
       scan.nextLine();
