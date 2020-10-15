@@ -9,21 +9,25 @@ class Main {
     System.out.println("Please enter your name.");
     String name = scan.nextLine();
     System.out.println("Your name is " + name);
+    System.out.println();
 
     //Collects the user's current amount of money
     System.out.println("Please enter your curent amount of money.");
     Double preCash = scan.nextDouble();
     System.out.println("Your curent amount of money is " + preCash);
+    System.out.println();
 
     //Collects how many weeks that they want to calculate
     System.out.println("How many weeks into the future do you want to calculate.");
     int weeks = scan.nextInt();
     System.out.println(name + " want to calculate " + weeks + " weeks in the future.");
+    System.out.println();
 
     //Collects how much you make per week
     System.out.println("How much you make per week.");
     Double salary = scan.nextDouble();
-    System.out.println(name + " make $" + salary + " per week.");
+    System.out.println(name + " makes $" + salary + " per week.");
+    System.out.println();
 
     //Loop to make the program do it's job
     int nowWeeks = 0;
@@ -34,12 +38,12 @@ class Main {
       {
         System.out.println("Week " + (nowWeeks + 1));
         nowCash = preCash + salary * (nowWeeks + 1);
-        System.out.println(name + " will make $" + nowCash + ".");
+        System.out.println(name + " will make $" + nowCash + " this week.");
         System.out.println();
         nowWeeks++;
       }
     }
-    if(salary <= 0 || weeks <=0)//super fun secret if you put a negative number for salary or weeks.
+    if(salary <= 0 || weeks <=0) //super fun secret if you put a negative number for salary or weeks.
     {
       System.out.println("!ERROR!");
       scan.nextLine();
